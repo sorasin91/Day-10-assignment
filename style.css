@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Navbar Top CSS */
+.navbar-top {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  flex: 1;
+  text-align: center; /* Center the text horizontally */
+}
+
+.logo h1 {
+  font-weight: bold;
+}
+
+.social-icon,
+.icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icon i img {
+  margin-left: 10px;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.social-icon i img:hover {
+  background-color: lightgrey;
+  border-radius: 50px;
+}
+
+/* Navbar CSS */
+.banner {
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  background-size: cover;
+  background-image: url(./image/background.png);
+  background-position: 70%;
+}
+
+#navbar {
+  background-color: blanchedalmond;
+}
+
+.navbar-nav {
+  margin: auto;
+}
+
+.nav-link {
+  margin-left: 30px;
+  font-weight: bold;
+  color: black;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.nav-link:hover {
+  color: lightslategray;
+}
+
+.content {
+  margin-top: 200px;
+  margin-left: 60px;
+}
+
+.content h1 {
+  margin: 0; /* Remove default margin on h1 element */
+  font-weight: bold;
+  font-size: 50px;
+}
+
+#shop-button {
+  border: none;
+  cursor: pointer;
+}
+
+#best-product {
+  box-shadow: 0 0 5px black;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+#best-product:hover {
+  transform: translateY(-10px);
+}
+
+/* Footer */
+#footer {
+  background-color: blanchedalmond;
+  padding: 5px 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  margin-top: 100px;
+}
+
+#footer h1 {
+  color: grey;
+  padding: 30px;
+}
+
+#footer p {
+  color: grey;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .navbar-top {
+    flex-direction: column; /* Stack items vertically on small screens */
+    align-items: center;
+  }
+
+  .logo {
+    margin: 10px 0; /* Add some space around the logo */
+  }
+
+  .content {
+    margin-left: 20px; /* Adjust margin for smaller screens */
+  }
+}
